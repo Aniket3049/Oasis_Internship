@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia, 'Times New Roman', Times, serif";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#left{
+    display: grid;
+    position: relative;
+    height:100%;
+    width: 40%;
+    background-image: url(https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   
+}
+
+#lnav{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    padding: 20px 30px;
+    
+}
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 25px; 
+}
+
+#left #text{
+   position: absolute;
+   top: 300px;
+   left:50px;
+}
+
+#text h1{
+    font-size: 70px;
+}
+
+#text p{
+
+    font-size: 15px;
+    line-height: 21px;
+    margin: 10px;
+}
+
+#text a{
+    text-decoration: none;
+    color: black;
+
+
+}
+
+
+#right{
+    height: 100%;
+    width: 60%;   
+}
+
+#rtop{
+    display: flex;
+    height:50%;
+    width: 100%;
+}
+
+#lbottom{
+    height: 50%;
+    width: 100%;
+    background-color: #8EACCD;
+    background-image: url(https://images.unsplash.com/photo-1617083934555-5fc3dc25434d?q=80&w=1573&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#rtopr{
+    
+    height: 100%;
+    width: 50%;
+    background-color: #D2E0FB;
+    background-image: url(https://images.unsplash.com/photo-1700254783347-7b91d9bfad89?q=80&w=1445&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+
+}
+#rtopl{
+    height: 100%;
+    width: 50%;
+    background-color:#c7d2bd; 
+    background-image: url(https://images.unsplash.com/photo-1616272963049-da2d8efc0c57?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+@media(max-width: 500px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #main #left {
+        width: 100%;
+    }
+
+    #main #right {
+        width: 100%;
+    }
+
+    #lnav {
+        padding: 10px 15px auto; 
+    }
+
+    #left #text {
+        top: 150px auto;
+        left: 10px; 
+    }
+
+    #text h1 {
+        font-size: 40px auto;
+    }
+
+    #text p {
+        font-size: 12px;
+        line-height: 18px; 
+    }
+}
